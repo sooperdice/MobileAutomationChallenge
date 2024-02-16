@@ -45,7 +45,7 @@ public class MainTest extends BaseTest {
 
         // Onboard user and select team
 		Reporter.log("Validate app welcome page text...");
-		softAssert.assertEquals(welcomePage.getWelcomeText(), "WELCOME", "Welcome text is incorrect");
+		Assert.assertEquals(welcomePage.getWelcomeText(), "WELCOME", "Welcome text is incorrect");
 		ChooseLeaguePage chooseLeaguePage = welcomePage.getStarted();
 
 		chooseLeaguePage.chooseLeague2(input.get("sport"));
