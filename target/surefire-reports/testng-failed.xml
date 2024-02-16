@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.thescore.TestUtils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="The Score - End to end Framework Test(failed)" verbose="0">
+    <classes>
+      <class name="org.thescore.TheScoreTest.MainTest">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="clearAppData"/>
+          <include name="ConfigureAppium"/>
+          <include name="setUp"/>
+          <include name="TC02_RefreshResultsBug"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.thescore.TheScoreTest.MainTest -->
+    </classes>
+  </test> <!-- The Score - End to end Framework Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

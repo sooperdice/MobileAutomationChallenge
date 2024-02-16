@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>TestNG:  The Score - End to end Framework Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>The Score - End to end Framework Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 15 18:44:52 EST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>122 seconds (122227 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.thescore.TheScoreTest.MainTest.TC02_RefreshResultsBug()'><b>TC02_RefreshResultsBug</b><br>Test class: org.thescore.TheScoreTest.MainTest<br>Test method: Test to demonstrate a bug in the app related to refreshing results</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of Located by By.chained({AppiumBy.id: com.fivemobile.thescore:id/error_view}) (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\bungh\eclipse-work..., appium:appPackage: com.fivemobile.thescore, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\bungh\eclipse-work..., autoGrantPermissions: true, automationName: UIAutomator2, deviceName: AshDevice, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 128, appium:takesScreenshot: true, appium:viewportRect: {height: 2081, left: 0, top: 128, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d81b27d0-df21-4c35-ba99-cbd5317203eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.thescore.pageObjects.android.ChooseTeamPage.searchAndhandleError(ChooseTeamPage.java:109)
+	at org.thescore.TheScoreTest.MainTest.TC02_RefreshResultsBug(MainTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2011862543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2011862543'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of Located by By.chained({AppiumBy.id: com.fivemobile.thescore:id/error_view}) (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\bungh\eclipse-work..., appium:appPackage: com.fivemobile.thescore, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\bungh\eclipse-work..., autoGrantPermissions: true, automationName: UIAutomator2, deviceName: AshDevice, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 128, appium:takesScreenshot: true, appium:viewportRect: {height: 2081, left: 0, top: 128, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d81b27d0-df21-4c35-ba99-cbd5317203eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.thescore.pageObjects.android.ChooseTeamPage.searchAndhandleError(ChooseTeamPage.java:109)
+	at org.thescore.TheScoreTest.MainTest.TC02_RefreshResultsBug(MainTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>16</td>
+<td>org.thescore.TheScoreTest.MainTest@4201c465</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.thescore.TheScoreTest.MainTest.TC01_OnboardUserandFindTeam()'><b>TC01_OnboardUserandFindTeam</b><br>Test class: org.thescore.TheScoreTest.MainTest<br>Parameters: {sport=Germany Soccer, league=GERMANY, team=Bayern Munich}<br/>
+<a href="#Output-2055458002" onClick='toggleBox("Output-2055458002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2055458002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2055458002">
+Validate app welcome page text...<br/>
+<h4>Completed the score onboarding flow</h4><br/>
+1.Find and select team<br/>
+2.Verify that the team page opens correctly.<br/>
+<h4>Team name verification passed successfully.</h4><br/>
+3.Tap on  player sub-tab <br/>
+4.Verify correct tab and data displayed correctly<br/>
+<h4>Player Tab displayed successfully.</h4><br/>
+5.Verify that back navigation returns to the previous page correctly.<br/>
+<h4>Navigated to previous page succeessfully</h4><br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>org.thescore.TheScoreTest.MainTest@4201c465</td></tr>
+<tr>
+<td title='org.thescore.TheScoreTest.MainTest.TC01_OnboardUserandFindTeam()'><b>TC01_OnboardUserandFindTeam</b><br>Test class: org.thescore.TheScoreTest.MainTest<br>Parameters: {sport=NBA Basketball, league=NBA, team=Toronto Raptors}<br/>
+<a href="#Output-492166433" onClick='toggleBox("Output-492166433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-492166433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-492166433">
+Validate app welcome page text...<br/>
+<h4>Completed the score onboarding flow</h4><br/>
+1.Find and select team<br/>
+2.Verify that the team page opens correctly.<br/>
+<h4>Team name verification passed successfully.</h4><br/>
+3.Tap on  player sub-tab <br/>
+4.Verify correct tab and data displayed correctly<br/>
+<h4>Player Tab displayed successfully.</h4><br/>
+5.Verify that back navigation returns to the previous page correctly.<br/>
+<h4>Navigated to previous page succeessfully</h4><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>org.thescore.TheScoreTest.MainTest@4201c465</td></tr>
+</table><p>
+</body>
+</html>
