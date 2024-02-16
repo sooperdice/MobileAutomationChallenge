@@ -30,7 +30,7 @@ public class MainTest extends BaseTest {
 	/**
 	 *	Test to Select favorites, find Team and navigate through tabs.
 	 */
-	@Test(dataProvider="getData",retryAnalyzer=Retry.class)
+	@Test(dataProvider="getData",retryAnalyzer=Retry.class, description = "Test to Select favorites, find Team and navigate through tabs.")
 	public void TC01_OnboardUserandFindTeam(HashMap<String, String> input) {
         // Initialization
 

@@ -54,12 +54,11 @@ This test scenario aims to verify the functionality of onboarding a user and fin
 
 ### Test Execution and Reporting:
 - The test will be executed using TestNG framework.
-- Test results and logs will be captured using ExtentReports for comprehensive reporting and analysis.
+- Test results and logs will be captured using ExtentReports for reporting and analysis.
 
 ### Additional Notes:
 - This test scenario includes positive path testing for onboarding and team selection.
-- Soft assertions are used to ensure all validation points are checked without terminating the test on the first failure.
 - A bug demonstration test is included to showcase a known issue in the application.
-- The test is parameterized to accommodate different sport, league, and team selections for broader coverage.
+- The test is parameterized to accommodate different sport, league, and team selections.
 - Custom logging is implemented to provide detailed information about test steps and outcomes.
 - TestNG listeners are utilized for test execution monitoring and reporting.
