@@ -44,7 +44,7 @@ End-to-end testing validates functionality across multiple components, while spe
 
 ### Instructions for setting up and running the project :
 
-1. Clone the repository: [Repo](https://github.com/sooperdice/TheScoreChallenge.git)
+1. Clone the repository: [Repo](https://github.com/sooperdice/MobileAutomationChallenge.git)
 
 ```bash
 git clone https://github.com/sooperdice/TheScoreChallenge.git
