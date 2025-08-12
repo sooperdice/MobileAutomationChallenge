@@ -47,7 +47,7 @@ End-to-end testing validates functionality across multiple components, while spe
 1. Clone the repository: [Repo](https://github.com/sooperdice/MobileAutomationChallenge.git)
 
 ```bash
-git clone https://github.com/sooperdice/TheScoreChallenge.git
+git clone https://github.com/sooperdice/MobileAutomationChallenge.git
 ```
 2. Update data.properties file: Navigate to the src/main/java directory and open the data.properties file. Update the file with the appropriate values for your environment. This file contains configurations such as IP address, port, Android device name, and Appium JS file path.
 
