@@ -56,7 +56,7 @@ git clone https://github.com/sooperdice/MobileAutomationChallenge.git
 
 To run in command line(maven)
 1. Open Terminal/Command prompt
-2. Navigate to project directory e.g C:\Users\bungh\eclipse-workspace\TheScore\TheScoreTest
+2. Navigate to the project directory, e.g., C:\Users\YourName\eclipse-workspace\MobileAutomationProject
 3. Run the following command:
 
 ```bash
@@ -66,7 +66,7 @@ mvn test -PRegression
 
 
 To run in eclipse or other IDE
-1. Right Click TheScoreTest\testng.xml > run as TestNG Suite
+1. Right Click MobileAutomationProject\testng.xml > run as TestNG Suite
 2. Select "Run As" > "TestNG Suite"
 
 
@@ -75,7 +75,7 @@ To run in eclipse or other IDE
 ### TestNG Results Report:
 
 To view TestNG results, open the following project file in a browser:
-/TheScoreTest/test-output/emailable-report.html
+/MobileAutomationProject/test-output/emailable-report.html
 
 [Or click here](target/surefire-reports/emailable-report.html)
 
@@ -84,7 +84,7 @@ To view TestNG results, open the following project file in a browser:
 ### ExtentReports Results Report:
 
 To view ExtentReports, open the following project file in a browser:
-/TheScoreTest/reports/index.html
+/MobileAutomationProject/reports/index.html
 Click On test case to view test specification.
 
 [Or Click here](reports/index.html)
