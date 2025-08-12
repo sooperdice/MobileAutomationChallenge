@@ -6,7 +6,7 @@
 ## Project Overview
 
 
-This project automates testing for The Score android native application, covering user onboarding, team discovery and page navigation scenarios.
+This project automates testing for an android native application, covering user onboarding, team discovery and page navigation scenarios.
 
 It adopts a robust testing approach, integrating key methodologies like the Page Object Model (POM), inheritance, encapsulation, and thorough end-to-end and negative testing. POM ensures effective organization and abstraction of UI complexities, enhancing maintainability and readability. Inheritance, exemplified by the BaseTest and AppiumUtils classes, fosters code reuse and consistency across tests, while encapsulation in POM classes promotes clean separation of concerns for easier maintenance. Additionally, interfaces (Listeners) augment flexibility and extensibility, facilitating seamless integration of new functionalities and test cases. TestNG and Extent Reports are instrumental in executing tests efficiently and generating comprehensive reports, providing detailed insights into results and expediting issue resolution.
 
