@@ -1,4 +1,4 @@
-# The Score QA Automation Engineer Mobile Challenge
+# Mobile Automation Challenge
 
 ##### Author: [Ashwin Gavai]
 ...
